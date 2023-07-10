@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-import printing
+__import__('builtins').getattr(__import__('builtins'), 'print')('#pythoniscool', end='\n')
