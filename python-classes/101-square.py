@@ -1,8 +1,8 @@
 #!/usr/bin/python3
+
 '''
 Defines a new class called Node
 '''
-
 
 class Node:
     '''
