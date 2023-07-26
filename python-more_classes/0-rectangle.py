@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-  '''
-    Define a empty rectangle
-  '''
+'''Empty Rectangle class
+'''
 
 
 class Rectangle:
     '''
-      These is an empty Rectangle
+    Class represents a rectangle
     '''
     pass
