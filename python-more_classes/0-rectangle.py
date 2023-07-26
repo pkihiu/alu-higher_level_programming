@@ -1,5 +1,11 @@
 #!/usr/bin/python3
-''' Define a empty rectangle'''
+  '''
+    Define a empty rectangle
+  '''
+
+
 class Rectangle:
-    '''These is an empty Rectangle'''
+    '''
+      These is an empty Rectangle
+    '''
     pass
