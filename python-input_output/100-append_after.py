@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """Defining a function to insert a line to a text"""
 
-
-
 def append_after(filename="", search_string="", new_string=""):
     """Insering a line of text to a file
 
