@@ -1,28 +1,13 @@
 #!/usr/bin/node
-#!/usr/bin/node
 
 const fs = require('fs');
 
-const srcFile1 = process.argv[2]; 
-const srcFile2 = process.argv[3];
-const destFile = process.argv[4];
-
-fs.writeFile(destFile, '', function (err) {
-  if (err) throw err;
-
-  fs.readFile(srcFile1, function (err, data) {
-    if (err) throw err;
-
-    fs.appendFile(destFile, data, function (err) {
-      if (err) throw err;
-
-      fs.readFile(srcFile2, function (err, data) {
-        if (err) throw err;
-
-        fs.appendFile(destFile, data, function (err) {
-          if (err) throw err;
-        }); 
-      });
+fs.readFile(process.argv[2], (errA, dataA) => {
+  if (errA) throw errA;
+  fs.readFile(process.argv[3], (errB, dataB) => {
+    if (errB) throw errB;
+    fs.writeFile(process.argv[4], dataA + dataB, (errC) => {
+      if (errC) throw errC;
     });
   });
 });
